@@ -1,0 +1,42 @@
+// ============================================
+// CARD VARIABLES
+// ============================================
+
+@use '../../abstracts/colors' as *;
+
+// Card Dimensions (Desktop)
+$card-width-desktop: 264px;
+$card-height-desktop: 264px;
+$card-padding-desktop: 16px;
+$card-border-radius: 8px;
+$card-border-width: 0.8px;
+
+// Card Dimensions (Mobile)
+$card-width-mobile: 162px;
+$card-height-mobile: 192px;
+$card-padding-mobile: 8px;
+$card-gap-mobile: 8px;
+
+// Image Container (Desktop)
+$image-container-width-desktop: 232px;
+$image-container-height-desktop: 110px;
+$image-container-bg: $color-border;
+
+// Image Container (Mobile)
+$image-container-width-mobile: 146px;
+$image-container-height-mobile: 77px;
+
+// Title Typography
+$title-font-size-desktop: 20px;
+$title-line-height-desktop: 26px;
+$title-font-weight: 700;
+$title-font-size-mobile: 12px;
+$title-line-height-mobile: 16px;
+
+// Subtitle Typography
+$subtitle-font-size-desktop: 16px;
+$subtitle-line-height-desktop: 22px;
+$subtitle-font-weight: 400;
+$subtitle-font-size-mobile: 12px;
+$subtitle-line-height-mobile: 16px;
+

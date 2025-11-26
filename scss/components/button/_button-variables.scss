@@ -1,0 +1,29 @@
+// ============================================
+// BUTTON VARIABLES
+// ============================================
+
+@use '../../abstracts/colors' as *;
+
+// Button Dimensions (Desktop)
+$button-width-desktop: 143px;
+$button-height-desktop: 38px;
+$button-font-size: 14px;
+$button-font-weight: 600;
+
+// Button Dimensions (Mobile)
+$button-width-mobile: 146px;
+$button-height-mobile: 28px;
+$button-padding-mobile: 4px 8px;
+$button-gap-mobile: 4px;
+
+// Button Styles
+$button-text-color: $color-text;
+$button-background-color: $color-primary;
+$button-border-color: $color-primary;
+$button-border-width: 1px;
+$button-border-radius: 4px;
+$button-padding: 8px 16px;
+$button-gap: 0;
+$button-hover-opacity: 0.9;
+$button-active-transform: scale(0.98);
+

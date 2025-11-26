@@ -1,0 +1,13 @@
+{
+  "name": "jquery-iskaypet",
+  "version": "1.0.0",
+  "description": "Layout card con jQuery, SCSS y BEM",
+  "scripts": {
+    "build-css": "sass scss/styles.scss styles.css",
+    "watch-css": "sass --watch scss/styles.scss styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
+

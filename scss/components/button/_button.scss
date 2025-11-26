@@ -1,0 +1,52 @@
+// ============================================
+// BUTTON COMPONENT
+// ============================================
+
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use 'button-variables' as *;
+
+.card__button {
+    width: $button-width-desktop;
+    height: $button-height-desktop;
+    border-width: $button-border-width;
+    border-radius: $button-border-radius;
+    padding: $button-padding;
+    background: $button-background-color;
+    border: $button-border-width solid $button-border-color;
+    color: $button-text-color;
+    font-family: $font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: $button-gap;
+}
+
+@include respond-to(mobile) {
+    .card__button {
+        width: $button-width-mobile;
+        height: $button-height-mobile;
+        padding: $button-padding-mobile;
+        gap: $button-gap-mobile;
+    }
+}
+
+.card__button:hover {
+    opacity: $button-hover-opacity;
+}
+
+.card__button:active {
+    transform: $button-active-transform;
+}
+
+.card__button.card__button--active {
+    background: $color-secondary;
+    border-color: $color-secondary;
+}
+

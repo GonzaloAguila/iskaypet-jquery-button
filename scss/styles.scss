@@ -1,0 +1,11 @@
+// ============================================
+// MAIN STYLESHEET
+// ============================================
+// Este archivo importa todos los modulos o bloques SCSS
+@forward 'abstracts/variables';
+@forward 'abstracts/mixins';
+
+@use 'base/body';
+@use 'components/card/card';
+@use 'components/button/button';
+

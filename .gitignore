@@ -1,0 +1,11 @@
+# Dependencias
+node_modules/
+
+# Archivos CSS compilados (generados desde SCSS)
+styles.css
+styles.css.map
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+

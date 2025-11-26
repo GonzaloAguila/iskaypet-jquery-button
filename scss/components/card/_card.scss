@@ -1,0 +1,87 @@
+// ============================================
+// CARD COMPONENT
+// ============================================
+
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use 'card-variables' as *;
+
+.card {
+    width: $card-width-desktop;
+    height: $card-height-desktop;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $card-padding-desktop;
+    box-sizing: border-box;
+    border: $card-border-width solid $color-border;
+    border-radius: $card-border-radius;
+    gap: 0;
+}
+
+@include respond-to(mobile) {
+    .card {
+        width: $card-width-mobile;
+        height: $card-height-mobile;
+        padding: $card-padding-mobile;
+        gap: $card-gap-mobile;
+    }
+}
+
+.card__image-container {
+    width: $image-container-width-desktop;
+    height: $image-container-height-desktop;
+    background-color: $image-container-bg;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+}
+
+@include respond-to(mobile) {
+    .card__image-container {
+        width: $image-container-width-mobile;
+        height: $image-container-height-mobile;
+        margin-bottom: 0;
+    }
+}
+
+.card__title {
+    font-family: $font-family;
+    font-weight: $title-font-weight;
+    font-style: normal;
+    font-size: $title-font-size-desktop;
+    line-height: $title-line-height-desktop;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0 0 8px 0;
+    color: $color-text;
+}
+
+@include respond-to(mobile) {
+    .card__title {
+        font-size: $title-font-size-mobile;
+        line-height: $title-line-height-mobile;
+        margin: 0 0 -4px 0;
+    }
+}
+
+.card__subtitle {
+    font-family: $font-family;
+    font-weight: $subtitle-font-weight;
+    font-style: normal;
+    font-size: $subtitle-font-size-desktop;
+    line-height: $subtitle-line-height-desktop;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0 0 16px 0;
+    color: $color-text;
+}
+
+@include respond-to(mobile) {
+    .card__subtitle {
+        font-size: $subtitle-font-size-mobile;
+        line-height: $subtitle-line-height-mobile;
+        margin: 0;
+    }
+}
+
